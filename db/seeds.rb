@@ -7,3 +7,43 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Review.destroy_all
+Restaurant.destroy_all
+
+Restaurant.create!(
+  name: "Epicure",
+  address: "75008 Paris",
+  phone_number: "0102030405",
+  category: "french"
+)
+
+Restaurant.create!(
+  name: "Sakura",
+  address: "Bordeaux Centre",
+  phone_number: "0102030406",
+  category: "japanese"
+)
+
+Restaurant.create!(
+  name: "Roma Mia",
+  address: "Toulouse",
+  phone_number: "0102030407",
+  category: "italian"
+)
+
+Restaurant.create!(
+  name: "Dragon House",
+  address: "Lyon",
+  phone_number: "0102030408",
+  category: "chinese"
+)
+
+Restaurant.create!(
+  name: "Brussels Food",
+  address: "Lille",
+  phone_number: "0102030409",
+  category: "belgian"
+)
+
+puts "Seeds created"
